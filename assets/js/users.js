@@ -1,16 +1,15 @@
-const jsonplaceholder_url = "https://dummyjson.com";
+const userjson_url = "https://dummyjson.com/users";
 const userwrapperEl = document.getElementById("users-wrapper");
 
 async function getUsers() {
-    try {
-        const res = await fetch(jsonplaceholder_url + "/users");
-        const data = await res.json();
+  try {
+    const users_res = await fetch(userjson_url);
+    const data = await users_res.json();
 
-        const users = data.users;
-        
+    const users = data.users;
 
-        for (const user of users) {
-            userwrapperEl.innerHTML += `<div class="col-md-6 col-lg-4">
+    for (const user of users) {
+      userwrapperEl.innerHTML += `<div class="col-md-6 col-lg-4">
         <div class="py-5" id="cards-wrapper">
             <div class="card d-flex mx-auto" id="card-bg" style="width:19rem; height:30em;">
                 <div class="card-body"> 
@@ -38,16 +37,16 @@ async function getUsers() {
                 
                 </div>
                     <div class="">
-                    <button href="#" class="btn-card1">Show Posts</button>
+                    <a href="/posts.html?id=${user.id}" class="btn-card1">Show User Posts</a>
                     </div>
                    
                 </div>
             </div>
         </div>
     </div>`;
-        }
-    } catch (error) {
-        console.log("bir hata oluştu:", error);
     }
+  } catch (error) {
+    console.log("bir hata oluştu:", error);
+  }
 }
 getUsers();

@@ -1,0 +1,140 @@
+:root {
+  --size:45rem;
+}
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/mulish-v13-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Mulish;
+}
+
+.bg-purpe {
+  background-color: #160e25;
+}
+
+.card-content {
+  height: 21rem;
+  padding: 5px;
+}
+.card-content p {
+  font-size: 0.9rem;
+}
+.card-text p{
+  margin-bottom: 5px;
+}
+
+#card-bg {
+  width: 22rem; 
+  height:26rem;
+  background-color: #241839;
+  color: #ffffff;
+  border-color: #ffffff3d;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+#reaction-icon {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.reactions {
+  display: flex;
+  align-items: center;
+}
+
+#tags p {
+  display: flex;
+  align-items: center;
+}
+
+.gap-6 {
+  gap: 12rem;
+}
+
+#main-logo {
+  width: 7rem;
+  display: flex;
+  margin: auto;
+}
+
+#header-info {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  margin: auto;
+  width: 12rem;
+  height: 12rem;
+  background: rgba(63, 57, 75, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(63, 57, 75, 0.64);
+}
+#warning-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  margin: auto;
+  width: 12rem;
+  height: 4rem;
+  background: rgba(63, 57, 75, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(63, 57, 75, 0.64);
+}
+#footer {
+  position: sticky;
+  width: 100%;
+  background: rgba(65, 56, 83, 0.3);
+  border: radius 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(63, 57, 75, 0.64);
+}
+.fa-size {
+  font-size: 24px;
+}
+#content-error {
+height: 20rem;
+}
+#icon-bomb {
+color:rgb(223, 149, 139);
+font-size: 7rem;
+}
+.icon-margin{
+  margin-right: 3px;
+}
